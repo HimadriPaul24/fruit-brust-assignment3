@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+
+
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        backgroundImage:{'hero-bg':"url('./images/banner1.png')"}
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom styles  -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-lato">
+
+    <header>
+        <div class="container mx-auto px-5">
+            <div class="navbar bg-white lg:bg-[#F85559] lg:py-8 lg:px-12 mt-12 lg:text-white rounded-full">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <ul tabindex="0" class="hidden lg:flex gap-7">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                        <label tabindex="0" class="lg:hidden btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="lg:hidden menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-28 rounded-box text-black">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl">Fruit Burst</a>
+                </div>
+                <div class="hidden md:flex navbar-end">
+                    <div class="form-control relative">
+                        <input type="text" placeholder="Search here..."
+                            class="input input-bordered md:w-auto lg:w-96 rounded-full" />
+                        <button class="absolute btn btn-ghost btn-circle right-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="gray">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="carousel w-full mt-14 mb-10 lg:mb-56 relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+                        <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <div class="btn text-white bg-[#F85559] border-[#F85559]">Shop Now</div>
+                    </div>
+                    <img src="images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/banner2.png" class="w-full" />
+                    <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+                        <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <div class="btn text-white bg-[#F85559] border-[#F85559]">Shop Now</div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/banner3.png" class="w-full" />
+                    <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+                        <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <div class="btn text-white bg-[#F85559] border-[#F85559]">Shop Now</div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="images/banner4.png" class="w-full" />
+                    <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+                        <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <div class="btn text-white bg-[#F85559] border-[#F85559]">Shop Now</div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div
+                class="absolute hidden lg:flex justify-evenly gap-34 w-2/3 h-60 bg-white rounded-md -bottom-[40%] left-[16.5%] shadow-xl">
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="images/fruit1.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="images/fruit2.png" alt="">
+                    <p>Orange</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="images/fruit5.png" alt="">
+                    <p>Mango</p>
+                </div>
+            </div>
+    </header>
+
+
+    <main>
+
+        <!-- meet the team section -->
+        <section>
+
+        <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-36 my-12" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Get Started</button>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </main>
+
+
+<!-- footer section -->
+    <footer class="footer footer-center p-10 bg-[#121212] text-white text-base-content rounded">
+        <div class="navbar-center flex">
+            <img class="w-10 h-10"  src="images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-4xl">Fruit Burst</a>
+        </div>
+        <div class="grid grid-cols-4 lg:grid-flow-col  gap-4">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="#0000FF">
+                    <path d="M23.8255 12.6168C23.8255 18.4258 19.5695 23.2405 14.0061 24.1133V15.9809H16.7178L17.2337 12.6168H14.0061V10.4338C14.0061 9.51327 14.457 8.61633 15.9027 8.61633H17.3701V5.75234C17.3701 5.75234 16.0381 5.52503 14.7648 5.52503C12.1067 5.52503 10.3692 7.13615 10.3692 10.0529V12.6168H7.41431V15.9809H10.3692V24.1133C4.8058 23.2405 0.549805 18.4258 0.549805 12.6168C0.549805 6.18966 5.76046 0.979004 12.1876 0.979004C18.6148 0.979004 23.8255 6.18966 23.8255 12.6168Z" fill="white"/>
+                    
+                  </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="34" height="25" viewBox="0 0 34 25" fill="none">
+                    <path d="M32.6609 4.62057C32.2777 3.19647 31.1549 2.07392 29.731 1.69044C27.1296 0.978516 16.7239 0.978516 16.7239 0.978516C16.7239 0.978516 6.31838 0.978516 3.71695 1.6633C2.32049 2.04653 1.1703 3.19672 0.787073 4.62057C0.102539 7.22175 0.102539 12.6164 0.102539 12.6164C0.102539 12.6164 0.102539 18.0381 0.787073 20.6121C1.17055 22.036 2.2931 23.1588 3.7172 23.5423C6.34577 24.2542 16.7241 24.2542 16.7241 24.2542C16.7241 24.2542 27.1296 24.2542 29.731 23.5694C31.1551 23.1862 32.2777 22.0634 32.6611 20.6395C33.3457 18.0381 33.3457 12.6437 33.3457 12.6437C33.3457 12.6437 33.3731 7.22175 32.6609 4.62057Z" fill="white"/>
+                    <path d="M13.4102 17.6003L22.0631 12.6165L13.4102 7.63281V17.6003Z" fill="#FF0000"/>
+                  </svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
